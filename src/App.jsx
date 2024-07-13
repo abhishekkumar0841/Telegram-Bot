@@ -20,7 +20,7 @@ const App = () => {
   const createUser = async () => {
     const data = { userId: uId };
     try {
-      const res = await fetch("http://localhost:5000/points/create", {
+      const res = await fetch("https://telegram-bot-backend-beryl.vercel.app/points/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

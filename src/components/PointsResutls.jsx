@@ -7,7 +7,7 @@ const PointsResutls = () => {
 
   const increasePoints = async () => {
     try {
-      const res = await fetch("http://localhost:5000/points/inc-points", {
+      const res = await fetch("https://telegram-bot-backend-beryl.vercel.app/points/inc-points", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
