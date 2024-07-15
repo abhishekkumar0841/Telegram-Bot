@@ -12,8 +12,8 @@ const userSlice = createSlice({
     setUserId: (state, action) => {
       state.userId = action.payload;
     },
-    setPoints: (state, action) => {
-      state.points = action.payload;
+    setPoints: (state) => {
+      state.points += 1;
     },
   },
 });
